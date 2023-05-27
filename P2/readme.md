@@ -1,7 +1,7 @@
 # Sample Dataset:
 ![Sample Dataset](../images/dataset.png)
 # Training and Validation Accuracy:
-![Accuracy](../images/Training_Validation_Loss.png)
+![Accuracy](../images/Training_Validation_Accuracy.png)
 # Training and Validation Loss:
 ![Loss](../images/Training_Validation_Loss.png)
 # Confusion Matrix:
