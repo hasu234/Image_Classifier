@@ -4,7 +4,7 @@ from PIL import Image
 import argparse
 import os
 import sys
-from classifier.CustomResnet import ResNet
+from classifier.Resnet import ResNet
 
 # Create an argument parser
 parser = argparse.ArgumentParser(description='Image classification inference script')
