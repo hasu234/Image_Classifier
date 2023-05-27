@@ -1,16 +1,22 @@
 import torch
 import torchvision.transforms as transforms
 from PIL import Image
+import argparse
 import os
 import sys
 from classifier.CustomResnet import ResNet
 
+# Create an argument parser
+parser = argparse.ArgumentParser(description='Image classification inference script')
+parser.add_argument('image_path', type=str, help='Path to the input image')
+parser.add_argument('model_path', type=str, help='Path to the pre-trained model')
+args = parser.parse_args()
 
 # Define the path to your single test image
-image_path = sys.argv[1]
+image_path = args.image_path
 
 # Check if the saved model file exists
-model_path = 'resnet_model.pth'
+model_path = args.model_path
 if os.path.isfile(model_path):
     # Device configuration
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -45,3 +51,7 @@ if os.path.isfile(model_path):
 
 else:
     print("Saved model file not found.")
+
+
+
+# run by python infer.py path/to/image.jpg path/to/model.pth
