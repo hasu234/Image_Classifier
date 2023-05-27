@@ -33,12 +33,16 @@ transform = transforms.Compose([
     transforms.RandomHorizontalFlip(),
     transforms.ToTensor()])
 
+transform_test = transforms.Compose([
+    transforms.Resize((224, 224)),
+    transforms.ToTensor()])
+
 # Load the training dataset
 train_dataset = ImageFolder(root=dataset_path + "/train", transform=transform)
 train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
 
 # Load the testing dataset
-test_dataset = ImageFolder(root=dataset_path + "/test", transform=transform)
+test_dataset = ImageFolder(root=dataset_path + "/test", transform=transform_test)
 test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
 
 
