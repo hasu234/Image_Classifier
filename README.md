@@ -101,6 +101,7 @@ docker ps
 ```
 docker exec -it <container id> bash
 ```
+You will get a Linux like command-line interface
 * Running the project
 ```
 # for training your data
