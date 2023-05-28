@@ -93,7 +93,7 @@ docker run -d sdpdsample
 ```
 * Get the container id
 ```
-docker ps
+docker ps -a
 ```
 * Getting inside the container
 ```
