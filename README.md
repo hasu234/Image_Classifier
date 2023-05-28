@@ -67,7 +67,7 @@ or make some chainges on ```train.py``` according to to your dataset directory.
 python train.py /path/to/dataset_directory
 ```
 ## Running inference
-* To run the inference on your test data make sure you downloaded the pretrained model from [this link](https://drive.google.com/file/d/14RgeyIVvySNp5J_LMpoBxxlJ1CUFRcI2/view?usp=sharing).
+* To run the inference on your test data make sure you downloaded the pretrained model from [this link](https://drive.google.com/uc?id=197Kuuo4LhHunYLgGKfGeouNTL0WguP0T&export=download).
 * Then run the ```infer.py``` script from terminal specifying the test image location and downloaded pretrained model location
 ```
 python infer.py path/to/image.jpg path/to/model.pth
