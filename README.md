@@ -83,6 +83,7 @@ git clone https://github.com/hasu234/SDPDSSample.git
 ```
 cd SDPDSSample
 ```
+Before Building the docker image transfer the files (model, test image, dataset) to current working directory if you don't want to deal with docker volume
 * Build the Docker image by running 
 ```
 docker build -t sdpdsample .
