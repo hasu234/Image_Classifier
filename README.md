@@ -87,20 +87,18 @@ cd SDPDSSample
 ```
 docker build -t sdpdsample .
 ```
-
+* Run the docker image 
 ```
-# Run the docker image 
 docker run -d sdpdsample
 ```
+* Get the container id
 ```
-# Get the container id
 docker ps
 ```
+* Getting inside the container
 ```
-# Getting inside the container
 docker exec -it <container id> bash
 ```
-
 * Running the project
 ```
 # for training your data
