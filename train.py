@@ -29,9 +29,13 @@ dataset_path = sys.argv[1]
 # Image preprocessing modules
 transform = transforms.Compose([
     transforms.Resize((224, 224)),
+    transforms.RandomPerspective(distortion_scale=0.6, p=0.2),
+    transforms.RandomHorizontalFlip(p=0.2),
     transforms.Pad(4),
-    transforms.RandomHorizontalFlip(),
+    transforms.RandomRotation(degrees=20),
+    transforms.ColorJitter(brightness=(0.75, 1.25)),
     transforms.ToTensor()])
+
 
 transform_test = transforms.Compose([
     transforms.Resize((224, 224)),
