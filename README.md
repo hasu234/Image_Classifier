@@ -87,11 +87,25 @@ cd SDPDSSample
 ```
 docker build -t sdpdsample .
 ```
-* Run the Docker container
+
+```
+# Run the docker image 
+docker run -d sdpdsample
+```
+```
+# Get the container id
+docker ps
+```
+```
+# Getting inside the container
+docker exec -it <container id> bash
+```
+
+* Running the project
 ```
 # for training your data
-docker run sdpdsample python train.py /path/to/dataset_directory
+python train.py /path/to/dataset_directory
 
 # for running inference
-docker run sdpdsample python infer.py path/to/image.jpg path/to/model.pth
+python infer.py path/to/image.jpg path/to/model.pth
 ```
