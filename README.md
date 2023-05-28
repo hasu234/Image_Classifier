@@ -91,9 +91,10 @@ docker build -t sdpdsample .
 ```
 docker run -d sdpdsample
 ```
+if the container failed to run in background, run it on foreground using ```docker run -it sdpdsample``` then exit to get the running container id
 * Get the container id
 ```
-docker ps -a
+docker ps
 ```
 * Getting inside the container
 ```
