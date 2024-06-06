@@ -6,13 +6,13 @@
 
 * Clone the repository by running 
 ```
-git clone https://github.com/hasu234/SDPDSSample.git
+git clone https://github.com/hasu234/Image_Classifier.git
 ```
-* Change current directory to SDPDSSample 
+* Change the current directory to SDPDSSample 
 ```
 cd SDPDSSample
 ```
-* Create a conda environmet 
+* Create a conda environment 
 ```
 conda create -n myenv python=3.9
 ```
