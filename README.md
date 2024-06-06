@@ -67,10 +67,9 @@ or make some changes on ```train.py``` according to your dataset directory.
 python train.py /path/to/dataset_directory
 ```
 ## Running inference
-* To run the inference on your test data make sure you downloaded the pre-trained model weight from [this link](https://drive.google.com/uc?id=197Kuuo4LhHunYLgGKfGeouNTL0WguP0T&export=download).
 * Then run the ```infer.py``` script from the terminal specifying the test image location and downloaded pre-trained model location
 ```
-python infer.py path/to/image.jpg path/to/model.pth
+python infer.py path/to/image.jpg model/resnet_model.pth
 ```
 
 
@@ -85,13 +84,13 @@ cd Image_Classifier
 ```
 * Build the Docker image by running 
 ```
-docker build -t Image_Classifier .
+docker build -t Image_Classifier.
 ```
 * Run the docker image 
 ```
 docker run -d Image_Classifier
 ```
-if the container fails to run in the background, run it in the foreground using ```docker run -it Image_Classifier``` then exit to get the running container id
+if the container fails to run in the background, run it in the foreground using ```docker run -it Image_Classifier``` then exit to get the running container ID
 * Get the container ID
 ```
 docker ps
@@ -106,6 +105,6 @@ You will get a Linux-like command-line interface
 # For training on your data
 python train.py /path/to/dataset_directory
 
-# for inference
-python infer.py path/to/image.jpg path/to/model.pth
+# For inference
+python infer.py path/to/image.jpg model/resnet_model.pth
 ```
