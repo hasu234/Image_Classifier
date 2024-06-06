@@ -85,13 +85,13 @@ cd Image_Classifier
 ```
 * Build the Docker image by running 
 ```
-docker build -t sdpdsample .
+docker build -t Image_Classifier .
 ```
 * Run the docker image 
 ```
-docker run -d sdpdsample
+docker run -d Image_Classifier
 ```
-if the container fails to run in the background, run it in the foreground using ```docker run -it sdpdsample``` then exit to get the running container id
+if the container fails to run in the background, run it in the foreground using ```docker run -it Image_Classifier``` then exit to get the running container id
 * Get the container ID
 ```
 docker ps
@@ -106,6 +106,6 @@ You will get a Linux-like command-line interface
 # For training on your data
 python train.py /path/to/dataset_directory
 
-# for running inference
+# for inference
 python infer.py path/to/image.jpg path/to/model.pth
 ```
